@@ -1,25 +1,18 @@
 Wallflower
 
-Trading is a discipline problem, not a knowledge problem.
-The Problem
+Regime adaptive crypto trading agent. Runs across BTCUSDT, ETHUSDT and SOLUSDT simultaneously.
 
-Crypto moves 24/7. The highest probability setups appear at 3am during geopolitical headlines when most traders are either asleep or emotionally compromised. By the time a human processes the signal, sizes the position, and executes, the edge is gone or worse, they have revenge traded into a losing position.
-What Wallflower Does
+How It Works
 
-Wallflower is a regime adaptive trading agent. It reads market structure, positioning data, and momentum signals simultaneously then executes without the emotional tax that costs retail traders most of their edge.
+Reads market regime before any signal fires. Bear, bull, or choppy. Choppy means no trade.
 
-Three operating modes based on live market conditions:
+Bear regime: waits for price to bounce into key resistance with volume declining. That bounce is failing. Agent shorts it.
 
-Bear regime: shorts failed bounces when volume confirms seller control at key moving averages.
+Capitulation: RSI floors while volume explodes above 2x average. Market is flushing. Agent goes long.
 
-Capitulation mode: identifies genuine panic versus slow bleed using RSI extremes and volume spikes. Enters long at the point of maximum fear.
+Bull regime: EMA crossover with volume confirmation. Follows momentum.
 
-Bull regime: follows confirmed momentum using EMA crossovers with volume validation.
-Hard rule: if BTC moves aggressively on a single candle, all positions close. Macro shock events override every signal.
-
-Results
-
-156 trades across BTC, ETH and SOL during one of the most volatile periods in recent crypto history. Maximum drawdown under 1%. Positive Sharpe ratio throughout.
+Single hard rule: BTC drops aggressively on one candle, everything closes. No exceptions.
 
 Built With
 Bitget Playbook. GetAgent SDK. MuleRun. Qwen API.
