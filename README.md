@@ -1,4 +1,5 @@
 Wallflower
+
 Trading is a discipline problem, not a knowledge problem.
 The Problem
 Crypto moves 24/7. The highest probability setups appear at 3am during geopolitical headlines when most traders are either asleep or emotionally compromised. By the time a human processes the signal, sizes the position, and executes, the edge is gone or worse, they have revenge traded into a losing position.
